@@ -67,7 +67,7 @@ Parameters:
 Returns:
     int             Representing the number of permutations that are solutions
 Notes:
-    
+
 *****************************************************************************/
 int generate_n_queens_serial_one(int n, int print_flag, int first)
 {
@@ -142,7 +142,7 @@ void get_array_string(int *list, int n, char *s)
 {
     int i;
     int iPrintfCount = 0;
-    for (i = 0; i < n; i++) 
+    for (i = 0; i < n; i++)
     {
         iPrintfCount = sprintf(&(s[i*5]), "%4d ", list[i]);
         
