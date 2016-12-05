@@ -95,9 +95,6 @@ int main(int argc, char *argv[])
             }
             return 0;
         default:
-            fprintf(stderr, "[%ld]:failed to close communfd: %s\n",
-                          (long)getpid(), strerror(errno));
-
             while (r_waitpid(-1, NULL, WNOHANG) > 0);
         }
     }
